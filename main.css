@@ -7,8 +7,7 @@ html {
     grid-template-columns: 4;
     background-color: bisque;
     width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+   margin: auto;
 }
 
 .myHeader {
@@ -132,7 +131,7 @@ html {
     background-color: lightsalmon;
     opacity: 0;
     animation-name: changeBorder;
-    animation-delay: 3s;
+    animation-delay: 5s;
     animation-duration: 2s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
