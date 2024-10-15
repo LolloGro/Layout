@@ -1,0 +1,192 @@
+html {
+    background-color: lightseagreen;
+}
+
+.myDiv {
+    display: grid;
+    grid-template-columns: 4;
+    background-color: bisque;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.myHeader {
+    grid-column: 1/5;
+    height: 100px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: -25px;
+}
+
+.mySpan {
+    grid-row: 2;
+    grid-column: 1;
+    height: 250px;
+    width: 250px;
+    background-color: lightcoral;
+}
+
+.picture {
+    grid-row: 3;
+    grid-column: 1;
+    height: 250px;
+    width: 250px;
+    animation-name: fromside;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.picture1 {
+    grid-row: 3;
+    grid-column: 3;
+    height: 250px;
+    width: 250px;
+}
+
+.picture2 {
+    grid-row: 2;
+    grid-column: 2;
+    height: 250px;
+    width: 250px;
+    opacity: 0;
+    animation-delay: 3s;
+    animation-name: fadeIn;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+.picture3 {
+    grid-row: 2;
+    grid-column: 4;
+    height: 250px;
+    width: 250px;
+    animation-name: downUpp;
+    animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+    animation-duration: 3s;
+}
+
+.picture4 {
+    grid-row: 4;
+    grid-column: 4;
+    height: 250px;
+    width: 250px;
+    opacity: 0;
+    animation-name: scale;
+    animation-delay: 3s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.myP1 {
+    display: flex;
+    align-items: center;
+    grid-row: 2;
+    grid-column: 3;
+    height: 250px;
+    width: 250px;
+    margin: 0;
+    font-family: verdana;
+    font-style: italic;
+    font-size: 24px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+
+.myP2 {
+    grid-row: 4;
+    grid-column: 2;
+    margin: 0;
+    height: 250px;
+    width: 250px;
+    place-content: center;
+    font-family: impact;
+    font-size: 16px;
+    text-align: center;
+    font-style: italic;
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: 3;
+}
+
+.myForm {
+
+    height: 250px;
+    width: 250px;
+    overflow: auto;
+    text-align: center;
+}
+
+.myList {
+    list-style-type: none;
+}
+.delBtn{
+    margin-left: 10px;
+}
+.noInput {
+    display: none;
+}
+
+.error {
+    display: block;
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: 3;
+}
+
+@keyframes blink {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fromside {
+    from {
+        transform: translateX(-300px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes downUpp {
+    0% {
+        transform: translateY(-300px);
+    }
+
+    50% {
+        transform: translateY(500px);
+    }
+
+    75% {
+        transform: translateX(-500px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes scale{
+    0% {
+        scale: 200%;
+    }
+    100%{
+        scale: 100%; 
+        opacity: 1;
+    }
+}
