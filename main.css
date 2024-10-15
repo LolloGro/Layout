@@ -1,5 +1,5 @@
 html {
-    background-color: lightseagreen;
+    background-color: mediumaquamarine;
 }
 
 .myDiv {
@@ -74,7 +74,7 @@ html {
     opacity: 0;
     animation-name: scale;
     animation-delay: 3s;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
 }
 
@@ -108,7 +108,28 @@ html {
     animation-duration: 1s;
     animation-iteration-count: 3;
 }
-
+.myP3 {
+    grid-row: 4;
+    grid-column: 3;
+    height: 250px;
+    width: 250px;
+    margin: 0;
+    background-color: lightseagreen;
+}
+.myP4{
+    grid-row: 4;
+    grid-column: 1;
+    height: 250px;
+    width: 250px;
+    margin: 0;
+    background-color: lightsalmon;
+    opacity: 0;
+    animation-name: changeBorder;
+    animation-delay: 3s;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
 .myForm {
 
     height: 250px;
@@ -188,5 +209,28 @@ html {
     100%{
         scale: 100%; 
         opacity: 1;
+    }
+}
+@keyframes changeBorder{
+    20% {
+        opacity: 0.2;
+        border-radius: 10%;
+
+    }
+    40%{
+        opacity: 0.4;
+        border-radius: 20%;
+    }
+    60%{
+        opacity: 0.6;
+        border-radius: 30%;
+    }
+    80% {
+        opacity: 0.8;
+        border-radius: 40%;
+    }
+    100% {
+        opacity: 1;
+        border-radius: 50%;
     }
 }
